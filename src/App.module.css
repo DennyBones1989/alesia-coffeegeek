@@ -1,0 +1,228 @@
+
+
+@font-face {
+  font-family: "Object Sans";   /*Can be any text*/
+  src: local("ObjectSansRegular"),
+    url("./fonts/ObjectSansRegular.otf") format("otf");
+}
+
+
+:root {
+  --header-footer-bg-color: #FFFBF4;
+  --darker-bg-color: #F5EDEA;
+  --font-01: "Object Sans";
+  --font-02: "JetBrainsMono";
+  --font-03: "NeueMachina";
+  --font-04: "NeueMonreal";
+  --headers-font-color: #372216;
+  --text-general-font-color: #533C14
+}
+
+body{
+  font-family: var(--font-02);
+  color:var(--text-general-font-color);
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: var(--font-01);
+  color:var(--headers-font-color);
+}
+
+h1.mainTitle{
+  margin: 0 0 50px 0;
+  font-size: 56px;
+}
+
+.App{
+  
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1440px;
+  
+}
+
+.logoName{
+  color:#0E0B06;
+  display: block;
+  width: 100%;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-family: var(--font-02);
+  margin: 0 auto;
+  padding: 80px 0;
+}
+
+.appHeader{
+  background-color: var(--header-footer-bg-color);
+  width: 100%;
+}
+
+.headerInner{
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 0 75px 50px 75px;
+}
+
+.headerContainer{
+  display: flex;
+}
+
+.headerContainer .headerLeft{
+  min-width: 770px;
+}
+
+.headerContainer .headerLeft h1{
+  font-size: 80px;
+  color:#372216;
+  margin: 0;
+  max-width: 690px;
+}
+
+.headerContainer .headerLeft .headerDescription{
+  font-family: var(--font-03);
+  font-size: 18px;
+  color:#533C14;
+  margin: 20px 0;
+  line-height: 27px;
+}
+
+.headerContainer .headerRight{
+  
+}
+
+.content{
+  max-width: 1440px;
+  padding: 0 75px;
+}
+
+.buttonRed{
+  border: 0;
+  border-radius: 8px;
+  background-color: #DF5151;
+  color:#fff;
+  cursor: pointer;
+  font-size: 24px;
+  padding: 10px 5px;
+  font-family: var(--font-02);
+  width: 168px;
+  height: 60px;
+}
+
+.buttonRed:hover{
+  background-color: #B94141;
+}
+
+.buttonRed svg{
+  vertical-align: middle;
+}
+
+.programsList{
+  display: flex;
+  width: 90%;
+}
+
+footer{
+  background-color: var(--header-footer-bg-color);
+  height: 206px;
+}
+
+.footerContainer{
+  max-width: 1440px;
+  padding: 0 75px;
+  height: 150px;
+  border-bottom: 1px #D9D9D9 solid;
+}
+
+.footerContainer .footerTop{
+  height: 150px;
+  display: flex;
+  
+}
+
+.footerContainer .footerTop div{
+  flex-basis: 50%;
+  
+}
+
+.footerContainer .footerNameContainer{
+  display: flex;
+  vertical-align: middle;
+  align-items: center;
+  justify-content: inherit;
+}
+
+.footerContainer .footerTop h2{
+  display: block;
+  font-family: var(--font-02);
+  font-size: 40px;
+  margin: 0;
+}
+
+.footerContainer .footerTop .socialNetworks{
+  display: flex;
+  vertical-align: middle;
+  align-items: center;
+  justify-content: end;
+}
+
+.footerContainer .footerTop .socialNetworks a{
+  color:#4e4e4e;
+  font-size: 32px;
+  margin-left: 10px;
+}
+
+.footerBottom{
+  display: flex;
+  vertical-align: middle;
+  align-items: center;
+  justify-content: start;
+  font-size: 16px;
+  height: 56px;
+  font-family: var(--font-04);
+}
+
+.footerBottomInner{
+  max-width: 1440px;
+  padding: 0 75px;
+}
+
+@media screen and (max-width: 480px){
+  .content{
+    padding: 0 25px;
+  }
+
+  h1.mainTitle{
+    font-size: 32px;
+    margin: 0 0 60px 0;
+    white-space: nowrap;
+  }
+
+  .logoName{
+    padding: 20px 0;
+  }
+
+  .headerInner{
+    padding: 0 25px 50px 25px;
+  }
+
+  .headerContainer{
+    display: block;
+  }
+
+  .headerContainer .headerLeft h1{
+    font-size: 48px;
+  }
+
+  .headerContainer .headerLeft .headerDescription{
+    margin:  0 0 20px 0;
+  }
+
+  .buttonRed{
+    width: 100%;
+  }
+
+  .footerContainer{
+    padding: 0 25px;
+  }
+}

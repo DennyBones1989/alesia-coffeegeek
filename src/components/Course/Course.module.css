@@ -1,0 +1,252 @@
+.coursesContainer{
+    margin-top: 100px;
+}
+
+.coursesList{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.courseHolder{
+    flex-basis: 48%;
+    border: 1px var(--darker-bg-color) solid;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 4%;
+}
+
+.courseHolderInner{
+    padding: 25px;
+}
+
+.courseHolderInner h3{
+    font-size: 32px;
+}
+
+.topPanel{
+    height: 15px;
+    background-color: var(--darker-bg-color);
+}
+
+.tagsContainer span{
+    border-radius: 5px;
+    display: inline-block;
+    margin-right: 20px;
+    background-color: var(--darker-bg-color);
+    color: var(--headers-font-color);
+    font-weight: bold;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    font-family: var(--font-01);
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.courseDescription ul{
+    list-style: none;
+    font-family: var(--font-03);
+    font-size: 14px;
+    padding: 0;
+}
+
+.courseDescription ul li{
+    padding-bottom: 15px;
+    font-size: 18px;
+}
+
+.courseDescription ul li::before {
+    content: '';
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    margin-right: 10px;
+    background-image: url('./../../img/coffee-bean.svg');
+}
+
+.bottomPanel{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.signupButtonContainer button{
+    border: 0;
+    border-radius: 8px;
+    background-color: var(--headers-font-color);
+    width: 140px;
+    height: 44px;
+    color:#fff;
+    font-weight: bold;
+    font-family: var(--font-01);
+    letter-spacing: 1px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.metricsContainer{
+    height:57px;
+    margin-left: 30px;
+    font-family: var(--font-01);
+    line-height: 23px;
+}
+
+.metricsContainer span{
+    display: block;
+}
+
+.metricsContainer span.valueMetrics{
+    font-family: var(--font-03);
+    font-size: 18px;
+    line-height: 27px;
+    white-space: nowrap;
+}
+
+
+span.value{
+   
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+/********POPUP*******/
+
+.modal{
+    border-radius: 15px;
+}
+
+a.close{
+    font-size: 24px;
+    display: block;
+    text-align: right;
+    padding: 20px 20px 0 0;
+    cursor: pointer;
+}
+
+.choosePopupContainer{
+    height: 546px;
+    display: flex;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.choosePopupContainerInner{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.title{
+    font-family: var(--font-01);
+    font-size: 32px;
+    color: var(--text-general-font-color);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.secondaryTitle{
+    display: block;
+    font-family: var(--font-03);
+    font-size:16px;
+    color: var(--text-general-font-color);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 456px;
+    
+}
+
+.form .formFieldsHolder{
+    margin-bottom: 20px;
+}
+
+.form label{
+    display: block;
+    font-size: 13px;
+    margin-bottom: 10px;
+    font-family: 'Poppins';
+}
+
+.form input {
+    
+    border:1px #d4d4d4 solid;
+    padding: 0 0 0 10px;
+    width: 100%;
+    height: 44px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: var(--font-03);
+}
+
+.sendButton{
+        border: 0;
+        border-radius: 8px;
+        background-color: var(--headers-font-color);
+        width: 100%;
+        height: 44px;
+        color:#fff;
+        font-weight: bold;
+        font-family: var(--font-01);
+        letter-spacing: 1px;
+        font-size: 16px;
+        cursor: pointer;
+        margin: 0;
+}
+
+.form input:focus{
+    border: 1px var(--headers-font-color) solid;
+}
+
+.form .formFieldsHolder{
+
+}
+
+.errorMessage{
+    color: #ec2929;
+    display: block;
+    
+    margin-top: 5px;
+    font-family: 'Poppins';
+}
+
+
+@media screen and (max-width: 480px){
+    .coursesList{
+        margin-bottom: 50px;
+    }
+
+    .courseHolder{
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+
+    .courseHolderInner h3{
+        font-size: 20px;
+    }
+
+    .courseDescription ul li{
+        font-size: 16px;
+    }
+
+    .metricsContainer{
+        height:57px;
+        margin: 0 16px 0 0 
+    }
+
+    .signupButtonContainer{
+        -webkit-box-ordinal-group: 4;
+        -moz-box-ordinal-group: 4;
+        -ms-flex-order: 4;
+        -webkit-order: 4;
+        order: 4;
+        flex-basis: 100%;
+    }
+
+    .signupButtonContainer button{
+        width: 100%;
+    }
+}

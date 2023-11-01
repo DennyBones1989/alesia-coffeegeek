@@ -1,0 +1,20 @@
+.certificateSliderContainer{
+    margin-top:100px
+}
+
+.certificatePhoto{
+    height: 330px;
+    overflow: hidden;
+}
+
+.certificatePhoto img{
+    width: 100%;
+}
+
+.certificateTitle{
+    text-align: center;
+    background-color: var(--darker-bg-color);
+    padding: 15px 0;
+    font-family: var(--font-01);
+    font-size: 18px;
+}

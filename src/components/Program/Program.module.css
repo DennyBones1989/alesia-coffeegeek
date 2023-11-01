@@ -1,0 +1,47 @@
+.programsHolder{
+    margin-top: 100px;
+}
+
+.programsList{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.programsList .program{
+    flex-basis: 30%;
+}
+
+.programsList .program h5{
+    font-size: 32px;
+    color:var(--headers-font-color);
+    margin: 20px 0;
+}
+
+.programsList .program .programText{
+    font-size: 18px;
+    color:var(--text-general-font-color);
+    font-family: var(--font-03);
+    line-height: 27px;
+}
+
+.programsList .program .beansContent{
+    display: flex;
+}
+
+.programsList .program .beansContent img{
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 480px){
+    .programsList .program h5{
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+
+    .programsList .program{
+        flex-basis: 100%;
+        margin-bottom: 50px;
+    }
+    
+  }

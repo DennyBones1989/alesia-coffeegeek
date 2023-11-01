@@ -1,0 +1,12 @@
+.photoGallery .imageRow{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.photoGallery .imageRow .imageContainer{
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 25px;
+}
